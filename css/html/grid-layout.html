@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid Alignment Demo</title>
+  <style>
+    /* 1. Parent Wrapper (Creates extra space to show *-content properties) */
+    .grid-container {
+      display: grid;
+      width: 100vw;
+      height: 100vh;
+
+      grid-template-columns: repeat(3, 120px);
+      grid-template-rows: repeat(2, 120px);
+
+      justify-content: center;
+    
+      align-content: center; 
+    }
+
+    /* 2. Grid Items */
+    .grid-item {
+     display: grid;
+      width: 80px;
+      height: 80px;
+      background-color: #0076ff;
+      color: white;
+      justify-items: center; 
+      align-items: center;
+      
+    }
+  </style>
+</head>
+<body>
+
+  <!-- The CSS Grid container -->
+  <div class="grid-container">
+    <div class="grid-item">items</div>
+    <div class="grid-item">items</div>
+    <div class="grid-item">items</div>
+    <div class="grid-item">items</div>
+    <div class="grid-item">items</div>
+    <div class="grid-item">items</div>
+  </div>
+
+</body>
+</html>

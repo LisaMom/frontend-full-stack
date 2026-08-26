@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 20px;
+}
+
+th {
+    text-align: left;
+}
+table {
+    border-spacing: 5px;
+}
+table {
+    background-color: #f2f2d1;
+}
+/* a:link {
+    color: red;
+}
+
+a:visited {
+    color: blue;
+}
+
+a:hover {
+    color: orange;
+}
+
+a:active {
+    color: black;
+}
+a {
+    font-family: Arial;
+}
+
+a:visited {
+    font-family: Arial;
+}
+
+a:hover {
+    font-family: "Times New Roman";
+}
+
+a:active {
+    font-family: "Comic Sans MS";
+}
+a {
+    text-decoration: none;
+}
+a:link {
+    background-color: powderblue;
+    color: green;
+}
+
+
+    */
+/* Base style for the link button */
+a { 
+  background-color: green; 
+  color: white; 
+  padding: 5px 5px; 
+  border-radius: 5px; 
+  text-align: center; 
+  text-decoration: none; 
+  display: inline-block; 
+}
+
+/* Corrected hover state rule */
+a:hover { 
+  background-color: blue; 
+  color: white; 
+}
+
+.gfg {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    color: #090;
+    text-align: center;
+}
+body {
+    font-family: "Arial", sans-serif;
+}
+h1 {
+    font-size: 32px;
+}
+
+p {
+    font-size: 1.2em;
+}
+p {
+    font-weight: bold; /* អក្សរដិត */
+}
+
+strong {
+    font-weight: 700; /* ស្មើនឹង bold */
+}
+em {
+    font-style: italic; /* អក្សរទ្រេត */
+}
+
+p {
+    font-style: normal; /* អក្សរធម្មតា */
+}
+p {
+    line-height: 1.5;
+}
+body {
+    font-family: "Verdana", sans-serif;
+}
+body {
+    font-size: 16px;
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+<h1 style="font-family: 'Roboto', sans-serif;">
+    Hello, World!
+</h1>
+<!-- <table>
+    <caption>Student Details</caption>
+    ...
+</table> -->
+<a href="#">Click Here</a>
+<table border="1"> 
+    <caption>Student Info</caption> 
+    <thead> 
+        <tr> <th>Name</th> 
+            <th>Age</th> 
+            <th>Score</th> 
+        </tr> 
+        <th colspan="2">Telephone</th>
+        <th rowspan="2">Telephone</th>
+    </thead> 
+    <tbody> 
+        <tr> 
+            <td>Dara</td> 
+            <td>18</td> 
+            <td>90</td> 
+        </tr> 
+    </tbody> 
+    <tfoot> 
+        <tr> 
+            <td>Total</td> 
+            <td>-</td> 
+            <td>90</td> 
+        </tr> 
+    </tfoot> 
+</table>
+</body>
+</html>

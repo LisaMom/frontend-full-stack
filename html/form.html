@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="">
+        <!-- label + input -->
+         <label for="firstname">first Name</label>
+         <input type="text" id="firstname" name="firstname" placeholder="Roes Jacksurn">
+
+         <!-- email -->
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="example12@gmail.com">
+        <!-- password -->
+         <label for="password">password</label>
+         <input type="password" id="password" name="password" placeholder="Kabdav12!@" pattern="[A-Za-z]{3}" title="Must be exactly 3 letters" required>
+
+         <!-- file -->
+          <label for="file">Chooes file</label>
+          <input type="file" id="file" name="file" accept="image/png">
+
+          <!-- radio -->
+           <label for="gender">Gender</label>
+           <input type="radio" id="gender" name="gender"> Female
+           <input type="radio" id="gender" name="gender"> Male
+
+           <!-- checkbox -->
+            <label for="course">The course at ISTAD</label>
+            <input type="checkbox" id="course" name="course"> cyber security
+
+            <!-- dropdown list -->
+             <label for="fruits">Chooes fruits</label>
+             <select name="fruits" id="fruits">
+                <option value="banana">Banana</option>
+                <option value="apple">Apple</option>
+             </select>
+
+             <!-- datalist -->
+              <label for="animal">Type your favorite Animal</label>
+              <input list="animal"/>
+              <datalist id="animal">
+                <option value="cat"></option>
+                <option value="cat"></option>
+                <option value="cat"></option>
+                <option value="cat"></option>
+                <option value="cat"></option>
+              </datalist>
+
+             <!-- textarea -->
+              <label for="longtext">Enter something you want</label>
+              <textarea type="text" id="longtext" name="longtext">
+          
+
+         <button>Submite form</button>
+    </form>
+    <!-- charset -->
+     <p>Copyright &#169; 2026 Your Name</p>
+     
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISTAD-Form</title>
+</head>
+<body>
+    <form>
+    <h2>Personal Information</h2>
+
+    <!-- Name KH -->
+    <label>Name (KH)*</label><br>
+    <input type="text" placeholder="គីម ស្រីនី" required><br><br>
+
+    <!-- Name EN -->
+    <label>Name (EN)*</label><br>
+    <input type="text" placeholder="Kim Sreyny" required><br><br>
+
+    <!-- Gender -->
+    <label>Gender*</label><br>
+    <select required>
+        <option value="" disabled selected>Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+    </select><br><br>
+
+    <!-- Date of Birth -->
+    <label>Date of Birth*</label><br>
+    <input type="text" placeholder="DD" size="4" required>
+    <select required>
+        <option value="" disabled selected>Month</option>
+        <option value="1">January</option>
+        <option value="2">February</option>
+        <option value="3">March</option>
+        <option value="4">April</option>
+        <option value="5">May</option>
+        <option value="6">June</option>
+        <option value="7">July</option>
+        <option value="8">August</option>
+        <option value="9">September</option>
+        <option value="10">October</option>
+        <option value="11">November</option>
+        <option value="12">December</option>
+    </select>
+    <input type="text" placeholder="YYYY" size="6" required><br><br>
+
+    <!-- Place of Birth -->
+    <label>Place of Birth*</label><br>
+    <select required>
+        <option value="" disabled selected>Select a province</option>
+        <option value="phnom_penh">Phnom Penh</option>
+        <option value="kompong_chhnang">Kompong Chhnang</option>
+        <option value="kompot">Kompot</option>
+    </select><br><br>
+
+    <!-- Contact Number -->
+    <label>Contact Number (Telegram)*</label><br>
+    <input type="text" placeholder="0967896888" required><br><br>
+
+    <!-- Degree -->
+    <label>Degree*</label><br>
+    <select required>
+        <option value="" disabled selected>Select Degree</option>
+    </select><br><br>
+
+    <!-- Shift -->
+    <label>Shift*</label><br>
+    <select required>
+        <option value="" disabled selected>Select Shift</option>
+    </select>
+</form>
+
+</body>
+</html>

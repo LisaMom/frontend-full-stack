@@ -1,0 +1,263 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amountment-ISTAD</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Moul&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Siemreap&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+        body > section {
+            position: relative; 
+        }
+           body > section::before { 
+            content: ""; 
+            position: absolute; 
+            width: 1000px; 
+            height: 1000px; 
+            background-image: url("../html/img/istad-logo.png"); 
+            background-repeat: no-repeat; 
+            background-size: contain; 
+            background-position: center; 
+            top: 55%; 
+            left: 100%; 
+            transform: translate(-50%, -50%); 
+            opacity: 0.12; 
+            z-index: 0; 
+            pointer-events: none;
+        }
+        body { 
+            width: 794px; 
+            min-height: 1123px; 
+            margin: 0 auto; 
+            padding: 68px 68px 45px 68px; 
+            background: white; 
+            font-size: 14px; 
+            color: black; 
+        }
+
+        @font-face {
+            font-family: tacteingFont;
+            src: url('./font/Tacteing.ttf');
+        }
+
+        .cambodia {
+            width: 100%;
+            text-align: end;
+            font-weight: 400;
+            font-family: "Moul", serif;
+            font-size: 16px;
+            line-height: 1.7;
+            margin-top: -5px;
+            padding-right: 2px;
+        }
+
+        .tacteing {
+            font-family: tacteingFont;
+            text-align: end;
+            font-size: 22px;
+            line-height: 1;
+            margin-top: 5px;
+        }
+
+        .amount {
+            text-align: center;
+            font-weight: 400;
+            font-family: "Moul", serif;
+            font-size: 17px;
+            line-height: 1.7;
+            margin-top: 8px;
+            margin-bottom: 18px;
+        }
+
+       .paragraph {
+    font-family: "Siemreap", sans-serif;
+    font-size: 14px;
+    line-height: 2;
+    text-align: justify;
+}
+        .paragraph p {
+            margin-top: 0;
+            margin-bottom: 7px;
+              text-indent: 50px;
+        }
+        .date {
+            text-align: end;
+            font-family: "Siemreap", sans-serif;
+            font-size: 13px;
+            line-height: 2;
+            margin-top: 12px;
+            padding-right: 3px;
+        }
+        .logo {
+            width: 190px;
+            height: auto;
+            display: block;
+            text-align: start;
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+        .footer {
+            margin-top: 16px;
+            width: 100%;
+        }
+
+        .footer hr {
+            width: 100%;
+            border: 0;
+            border-top: 2px solid darkblue;
+            margin: 0 0 6px 0;
+        }
+
+        .footer > div {
+            color: darkblue;
+            letter-spacing: 4px;
+            font-family: "Siemreap", sans-serif;
+            font-size: 12px;
+            margin-bottom: 8px;
+        }
+
+        .address {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 100%;
+            gap: 15px;
+            color: darkblue;
+            font-family: "Siemreap", sans-serif;
+            font-size: 8px;
+            line-height: 1.5;
+        }
+
+        i {
+            color: darkblue;
+            margin-right: 5px;
+            font-size: 13px;
+        }
+        .bullet-symbol{
+            font-family: "Siemreap", sans-serif;
+            font-size: 14px;
+            line-height: 2;
+             padding-left: 25px;
+            text-indent: -25px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="cambodia">
+            <div>ព្រះរាជាណាចក្រកម្ពុជា</div>
+            <div>ជាតិ សាសនា ព្រះមហាក្សត្រ</div>
+            <div class="tacteing">3</div>
+        </div>
+
+        <div>
+            <img class="logo" src="../html/img/istad-logo.png" alt="">
+        </div>
+
+        <section class="amount">
+            <div>
+                សេចក្តីជូនដំណឹង
+                <div>ស្តីអំពីការបង់ថ្លៃសិក្សា អាហារូបករណ៍ ៥០%</div>
+                <div>វគ្គ FullStack Web Development ជំនាន់ទី៣</div>
+                <div>ឆ្នាំសិក្សា ២០២៥ - ២០២៦</div>
+            </div>
+        </section>
+
+        <section class="paragraph">
+            <p>
+                <span style="font-weight: bold;">វិទ្យាស្ថាន សាយអិនស៍ អេន ថេកណឡជី អ៊ែតវ៉ានស៍ ឌីវេឡុបម៉ិន (ISTAD)</span>
+                សូមប្រគេន និងជម្រាបជូនដំណឹងដល់សមណនិស្សិត
+                និស្សិតទាំងអស់ ដែលជាបេក្ខជនជ័យលាភីអាហារូបករណ៍
+                ៥០% <span style="font-weight: bold;">វគ្គ FullStack Web Development ជំនាន់ទី៣</span>
+                អំពីថ្លៃសិក្សាដែលត្រូវបង់ក្រោយទទួលបានអាហារូបករណ៍
+                ដូចខាងក្រោម៖
+            </p>
+
+            <div>
+                <div>
+                    I.&nbsp;&nbsp;
+                    សម្រាប់និស្សិតដែលកំពុងសិក្សាថ្នាក់បរិញ្ញាបត្រ
+                    នៅ វិទ្យាស្ថាន ISTAD
+                    <br>
+                    <span class="bullet-symbol">❖</span> ថ្លៃសិក្សាក្រោយទទួលបានអាហារូបករណ៍ ២៥០ ដុល្លារ
+
+                    <br><br>
+
+                   II.&nbsp;&nbsp;
+                    សម្រាប់អតីតនិស្សិត Foundation Course
+                    <br>
+                    <span class="bullet-symbol">❖</span> ថ្លៃសិក្សាក្រោយទទួលបានអាហារូបករណ៍ ៤០០ ដុល្លារ
+                    <br>
+                    <span class="bullet-symbol">❖</span> ករណីនិស្សិតបង់ថ្លៃសិក្សាទាំងអស់
+                    ក្នុងកំឡុងពេល ១០ថ្ងៃដំបូងបន្ទាប់ពីថ្ងៃជូនដំណឹងនេះ៖
+                    គឺ ៣៥០ ដុល្លារ
+                    (ថ្ងៃទី០៣ សីហា ដល់ថ្ងៃទី ១៣ សីហា ២០២៦)។
+
+                    <br><br>
+
+                    III.&nbsp;&nbsp;
+                    សម្រាប់និស្សិតទូទៅ
+                    <br>
+                    <span class="bullet-symbol">❖</span> ថ្លៃសិក្សាក្រោយទទួលបានអាហារូបករណ៍ ៥០០ ដុល្លារ
+                    <br>
+                    <span class="bullet-symbol">❖</span> ករណីនិស្សិតបង់ថ្លៃសិក្សាទាំងអស់
+                    ក្នុងកំឡុងពេល ១០ថ្ងៃដំបូងបន្ទាប់ពីថ្ងៃជូនដំណឹងនេះ៖
+                    គឺ ៤០០ ដុល្លារ
+                    (ថ្ងៃទី០៣ សីហា ដល់ថ្ងៃទី ១៣ សីហា ២០២៦)។
+
+                    <br><br>
+
+                    IV.&nbsp;&nbsp;
+                    សម្រាប់និស្សិតទាំងអស់
+                    <br>
+                    <span class="bullet-symbol">❖</span> និស្សិតទាំងអស់សូមបង់ថ្លៃសិក្សាឱ្យបានមុន
+                    ថ្ងៃចន្ទ ទី១៧ ខែ សីហា ឆ្នាំ ២០២៦។
+                </div>
+            </div>
+
+            <div class="date">
+                ថ្ងៃចន្ទ ៥រោច ខែទុតិយាសាឍ ឆ្នាំមមី អដ្ឋស័ក ពស ២៥៧០
+                <div>រាជធានីភ្នំពេញ ថ្ងៃ៣ ខែសីហា ឆ្នាំ២០២៦</div>
+                <div>ការិយាល័យសិក្សា និងរដ្ឋបាល</div>
+            </div>
+        </section>
+
+        <section class="footer">
+            <hr>
+            <div style="color:darkblue ; letter-spacing:5px;">
+                Institute of Science and Technology Advanced Development
+            </div>
+
+            <footer class="address">
+                <div>
+                    <i class="fa-solid fa-location-dot"></i>
+                    No.40, St. 273, Sangkat Boeng kak I,
+                    Khan Toul Kork, Phnom Penh
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    (+855) 95 990 910
+                    (+855) 93 990 910
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-envelope"></i>
+                    cstad.edu.kh
+                    info.istad@gmail.com
+                </div>
+            </footer>
+        </section>
+    </section>
+</body>
+</html>

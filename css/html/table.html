@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            margin: auto;
+            width: 700px;
+            text-align: center;
+        }
+        thead{
+            background-color: azure;
+        }
+        th{
+            width: 100px;
+            height: 50px;
+        }
+        tr{
+            cursor: pointer;
+            &:nth-child(even){
+                background-color: palevioletred;
+            }
+        }
+    </style>
+</head>
+<body>
+<!-- data table -->
+   <table border="1">
+    <!-- thead, tbody, tfoot -->
+     <caption>Dislay Product Items</caption>
+     <thead>
+       <tr>
+         <th></th> <!--selection check-->
+         <th></th> <!-- image of product -->
+         <th>Product Name</th>
+         <th>Price</th>
+         <th>Quantity</th>
+         <th>Action</th>
+       </tr>
+     </thead>
+
+     <!-- product cell -->
+      <tbody>
+        <!-- row of data -->
+         <tr>
+           <td>
+            <input type="checkbox" name="productId" id="productId">
+           </td>
+           <td>
+             <img src="https://static.shiekh.com/media/catalog/product/a/9/a9684e749f9b63b166dbb0da251c4b0b.jpg" alt="shoes" width="70" height="70">
+           </td>
+           <td>Onitsuka Tiger</td>
+           <td>24.00$</td>
+           <td>
+             <center>
+              <input type="number" name="qty" id="qty" style="width: 40px;" value="1">
+            </center>
+           </td>
+           <td>
+            <button popovertarget="popup-modal">Display</button>
+           </td>
+         </tr>
+
+         <!-- row 2 -->
+           <tr popovertarget="popup-modal">
+           <td>
+            <input type="checkbox" name="productId" id="productId">
+           </td>
+           <td>
+             <img src="https://png.pngtree.com/png-vector/20231230/ourmid/pngtree-dropshipping-men-hole-sole-jogging-shoes-png-image_11389148.png" alt="shoes" width="70" height="70">
+           </td>
+           <td>Jordan Shoe</td>
+           <td>12.00$</td>
+           <td>
+             <center>
+              <input type="number" name="qty" id="qty" style="width: 40px;" value="1">
+            </center>
+           </td>
+           <td>
+             <button popovertarget="popup-modal">Display</button>
+           </td>
+         </tr>
+         <!-- row 3 -->
+           <tr popovertarget="popup-modal">
+           <td>
+            <input type="checkbox" name="productId" id="productId">
+           </td>
+           <td>
+             <img src="https://png.pngtree.com/png-vector/20231230/ourmid/pngtree-dropshipping-men-hole-sole-jogging-shoes-png-image_11389148.png" alt="shoes" width="70" height="70">
+           </td>
+           <td>Jordan Shoe</td>
+           <td>12.00$</td>
+           <td>
+             <center>
+              <input type="number" name="qty" id="qty" style="width: 40px;" value="1">
+            </center>
+           </td>
+           <td>
+             <button popovertarget="popup-modal">Display</button>
+           </td>
+         </tr>
+         <!-- row 4 -->
+           <tr popovertarget="popup-modal">
+           <td>
+            <input type="checkbox" name="productId" id="productId">
+           </td>
+           <td>
+             <img src="https://png.pngtree.com/png-vector/20231230/ourmid/pngtree-dropshipping-men-hole-sole-jogging-shoes-png-image_11389148.png" alt="shoes" width="70" height="70">
+           </td>
+           <td>Jordan Shoe</td>
+           <td>12.00$</td>
+           <td>
+             <center>
+              <input type="number" name="qty" id="qty" style="width: 40px;" value="1">
+            </center>
+           </td>
+           <td>
+             <button popovertarget="popup-modal">Display</button>
+           </td>
+         </tr>
+      </tbody>
+   </table>
+
+</body>
+</html>

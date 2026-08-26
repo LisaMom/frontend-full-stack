@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Items</title>
+    <style>
+   .flex-container {
+  display: flex;
+  height: 100px;
+  background-color: #f1f1f1;
+  
+  align-items: center; 
+}
+
+.box {
+  background-color: #007bff;
+  color: white;
+  margin: 10px;
+  padding: 15px;
+  width: 150px;
+}
+
+.tall {
+  font-size: 20px;
+} 
+/*justify-contents*/
+/*
+.flex-container {
+  display: flex;
+  background-color: #f1f1f1;
+  padding: 10px;
+  gap: 10px;
+  justify-content: end; 
+}
+
+.box {
+  background-color: #28a745;
+  color: white;
+  padding: 15px;
+  width: 100px;
+  text-align: center;
+}
+*/
+.parent-container {
+  position: relative; /* Act as the anchor for the child */
+  width: 300px;
+  height: 200px;
+  background-color: #f0f0f0;
+}
+
+.absolute-badge {
+  position: absolute; /* Pull out of normal document flow */
+  top: 10px;          /* 10px down from the parent's top edge */
+  right: 10px;        /* 10px left from the parent's right edge */
+  background-color: red;
+  color: white;
+}
+
+
+    </style>
+</head>
+<body>
+    <!-- <div class="flex-container">
+        <div class="box short">Short Text</div>
+        <div class="box tall">This is a much taller block of text to show alignment.</div>
+        <div class="box short">Short Text</div>
+    </div> -->
+
+    <!-- justify-contents -->
+     <div class="flex-container">
+  <div class="box">Item 1</div>
+  <div class="box">Item 2</div>
+  <div class="box">Item 3</div>
+</div>
+
+<div class="parent-container">
+  <div class="absolute-badge">New!</div>
+</div>
+
+</body>
+</html>

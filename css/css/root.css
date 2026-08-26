@@ -1,0 +1,26 @@
+:root {
+	--mycolor: red;
+	--mybackground: blue;
+	--text-color: whitesmoke;
+	--myfont-size: 20px;
+	--spacing: 15px;
+}
+/* @media (max-width: 768px) { 
+  body { background-color: lightcoral; } 
+}
+
+@media (max-width: 428px) { 
+  body { background-color: red; } 
+} */
+
+/* 1. Smallest breakpoint goes first */
+@media (min-width: 428px) { 
+  body { background-color: yellow; } 
+}
+/* min it's mean start from size 428 to large or to size (botton to top) that we are set while max it's mean start from 428px to small size (top to botton) */
+
+/* 2. Larger breakpoint goes next and overrides the first one */
+@media (min-width: 768px) { 
+  body { background-color: purple; } 
+}
+
