@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../output.css">
+    <style>
+   /*     .card-container { 
+                container-name: my-card; 
+                container-type: inline-size; 
+        } 
+        .card {
+            background-color: pink; padding: 15px; 
+        } 
+/* ប្រើ @container ដើម្បីប្តូរពណ៌កាត លុះត្រាតែប្រអប់មេមានទទឹងធំជាង 400px */
+ /*   @container my-card (max-width: 400px) { 
+            .card { 
+                background-color: lightgreen; 
+                display: flex; 
+                justify-content: space-between; 
+           } 
+    } */
+
+    </style>
+</head>
+<body>
+    <main class="container mx-auto px-4 bg-amber-200">
+  <h1 class="text-2xl font-bold ">កាតាឡុកម្ហូបអាហារ</h1>
+  <p>ខ្លឹមសារទាំងមូលនឹងត្រូវតម្រឹមទំហំទៅតាមទំហំអេក្រង់ (Screen Size)។</p>
+</main>
+
+<!-- ========================================== -->
+<!-- កន្លែងទី ១៖ ដាក់ក្នុង Sidebar (ប្រអប់តូច w-64) -->
+<!-- ========================================== -->
+<aside class="@container w-64 border p-4">
+  <p class="text-xs text-gray-500 mb-2">ក្នុង Sidebar (ប្រអប់តូច):</p>
+  
+  <!-- PROFILE CARD -->
+  <div class="flex flex-col @[350px]:flex-row items-center gap-4 bg-yellow-800 p-4 rounded-lg">
+    <img src="avatar.jpg" class="w-16 h-16 rounded-full" alt="User" />
+    <div>
+      <h3 class="font-bold text-base">សុក មករា</h3>
+      <p class="text-sm text-gray-600">Frontend Developer</p>
+    </div>
+  </div>
+</aside>
+
+<!-- ========================================== -->
+<!-- កន្លែងទី ២៖ ដាក់ក្នុង Main Content (ប្រអប់ធំ w-full) -->
+<!-- ========================================== -->
+<section class="@container w-full border p-4 mt-6">
+  <p class="text-xs text-gray-500 mb-2">ក្នុង Main Content (ប្រអប់ធំ):</p>
+  
+  <!-- PROFILE CARD ដដែល ប្រើ CODE ដូចគ្នាបេះបិទ! -->
+  <div class="flex flex-col @[350px]:flex-row items-center gap-4 bg-pink-500 p-4 rounded-lg">
+    <img src="avatar.jpg" class="w-16 h-16 rounded-full" alt="User" />
+    <div>
+      <h3 class="font-bold text-base">សុក មករា</h3>
+      <p class="text-sm text-gray-600">Frontend Developer</p>
+    </div>
+  </div>
+</section>
+<!-- 
+<div class="card-container"> 
+    <div class="card"> 
+        <h2>កាតព័ត៌មាន</h2>
+        <p>អត្ថបទពិពណ៌នាអំពីអ្វីមួយ...</p> 
+    </div> 
+</div> -->
+
+</body>
+</html>
