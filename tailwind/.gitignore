@@ -1,0 +1,12 @@
+# Ignore secret environment variables
+.env
+config.json
+
+# Ignore dependency directories
+node_modules/
+dist/
+
+# Ignore system logs and temporary files
+*.log
+.DS_Store
+Thumbs.db
