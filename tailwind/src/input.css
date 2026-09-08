@@ -1,3 +1,12 @@
+
 @import "tailwindcss";
+
+/* Preline UI */
+/* @source "../"; */
+@import "../node_modules/preline/variants.css";
+/* Preline Themes */
+@import "../node_modules/preline//css/themes/theme.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Moul&display=swap');
 
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));

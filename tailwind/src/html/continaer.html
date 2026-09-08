@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Container</title>
+</head>
+<body>
+    <!-- container vs container query -->
+
+<!-- container -->
+ <div class="container mx-auto bg-white p-6 rounded-lg shadow-md mb-8">
+    <p class="text-gray-700">
+      This is a standard Tailwind container. It's centered with auto margins and has responsive max-width
+      that changes at different breakpoints. It responds to the viewport/screen size.
+    </p>
+    <!-- Responsive elements based on viewport -->
+    <div class="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div class="bg-blue-100 p-4 rounded">Panel 1</div>
+      <div class="bg-blue-100 p-4 rounded">Panel 2</div>
+      <div class="bg-blue-100 p-4 rounded">Panel 3</div>
+    </div>
+  </div>
+
+<!-- container query -->
+  <div class="@container bg-gray-50 border rounded-lg overflow-hidden">
+        <!-- Container query variants applied to this card -->
+        <div class="@xs:flex @md:flex-row @xs:flex-col p-4 gap-4">
+          <div class="@xs:w-full @md:w-1/3 @md:bg-red-500 @lg:bg-pink-500 bg-blue-500 h-32 rounded-lg @xs:mb-4 @md:mb-0"></div>
+
+          <div class="@xs:w-full @md:w-2/3">
+            <h4 class="@xs:text-lg @md:text-xl font-bold">Product Card</h4>
+            <div class="mt-4">
+              <button class="@xs:w-full @md:w-auto bg-blue-500 text-white px-4 py-2 rounded">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+</body>
+</html>
